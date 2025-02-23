@@ -10,7 +10,7 @@ const main = async () => {
     headless: false,
     args: ["--start-maximized"],
   })
-  const context = await browser.newContext({ viewport: null });
+  const context = await browser.newContext({ viewport: null })
   const page = await context.newPage()
 
   await page.goto('https://www.facebook.com')
@@ -23,7 +23,7 @@ const main = async () => {
   // you have to resolve captcha, 2fa manually if any
   await delay(10 * 1000)
 
-  // sometimes facebook will ask for 2nd login
+  // sometimes, facebook will ask for 2nd login
   await page.getByTestId('royal-email').click()
   await page.getByTestId('royal-email').fill(process.env.EMAIL)
   await page.getByTestId('royal-email').press('Tab')
