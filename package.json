@@ -1,0 +1,19 @@
+{
+  "name": "delete-all-facebook-group-posts",
+  "version": "1.0.0",
+  "description": "Delete All Facebook Group Posts",
+  "main": "src/cmd/start.js",
+  "scripts": {
+    "start": "node src/cmd/start.js",
+    "codegen": "playwright codegen"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright-chromium": "^1.50.1"
+  }
+}
