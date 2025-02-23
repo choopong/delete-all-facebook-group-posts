@@ -52,7 +52,7 @@ const main = async () => {
       if (await button.count() === 0) {
         break
       }
-      await button.first().click()
+      await button.click()
       await page.getByRole('button', { name: 'Delete' }).click()
       await delay(3 * 1000)
     }
